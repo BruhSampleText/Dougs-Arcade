@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg3dg3dh5pkqq"]
+
+[ext_resource type="PackedScene" uid="uid://jihi6fuppwgj" path="res://assets/meshes/Offyce.glb" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://d0kwv51n55b1d" path="res://assets/nodes/player_camera.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Offyce" parent="." instance=ExtResource("1_o5qli")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="PlayerCamera" parent="." instance=ExtResource("2_0wfyh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2, -3.8)
+
+[editable path="Offyce"]

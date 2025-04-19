@@ -13,3 +13,10 @@ config_version=5
 config/name="Doug's Arcade"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[input]
+
+toggle_camera={
+"deadzone": 0.2,
+"events": []
+}
